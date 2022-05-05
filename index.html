@@ -15,7 +15,7 @@
   <body onscroll="onScroll()">
     <nav id="navigation">
       <div class="wrapper">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
           <svg
             width="133"
             height="18"
@@ -67,9 +67,9 @@
         </a>
         <div class="menu">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
             <li><a href="#">Depoimentos</a></li>
           </ul>
           <a class="button" href="#">Agende sua consulta</a>
@@ -214,7 +214,7 @@
         </button>
       </div>
     </nav>
-    <header class="wrapper">
+    <header id="home" class="wrapper">
       <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
       <h1>Assistência médica simplificada para todos</h1>
       <p>
@@ -244,7 +244,6 @@
         </div>
       </div>
     </header>
-
     <section id="services">
       <div class="wrapper">
         <header>
