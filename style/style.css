@@ -201,6 +201,12 @@ body.menuExpanded .menu {
   margin-bottom: 8rem;
 }
 
+.menu .button:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+  filter: brightness(1.1);
+}
+
 .socialLinks {
   display: flex;
   gap: 3.2rem;
@@ -373,9 +379,12 @@ footer .socialLinks {
   right: 2.5rem;
   opacity: 0;
   visibility: hidden;
+  transition: 200ms;
+  transform: translateY(100%);
 }
 
 #backToTopButton.show {
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
