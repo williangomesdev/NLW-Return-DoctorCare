@@ -13,6 +13,7 @@
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
+  --brand-dark: hsl(170, 100%, 14%);
   --brand-light: hsla(148, 23%, 89%, 1);
   --bg-light: hsl(180, 14%, 97%);
   --nav-height: 7.2rem;
@@ -41,7 +42,7 @@ body {
   padding-inline: 2.4rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -76,6 +77,29 @@ section .content p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
+}
+
+.button {
+  cursor: pointer;
+  background: var(--primary-color);
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 4rem;
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: var(--brand-dark);
 }
 
 nav {
@@ -222,29 +246,15 @@ body.menuExpanded button path {
   margin-bottom: 3.2rem;
 }
 
-#home button {
-  cursor: pointer;
-  background: var(--primary-color);
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  border-radius: 4rem;
-  width: 26.3rem;
-  height: 6.2rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-  margin: 0 auto 6rem;
-}
-
-#home > img {
+#home img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
+}
+
+#home .button {
+  margin: 0 auto 6rem;
 }
 
 #home .stats {
@@ -304,4 +314,28 @@ body.menuExpanded button path {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+
+#contact {
+  text-align: left;
+}
+
+#contact header {
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#contact .button {
 }
