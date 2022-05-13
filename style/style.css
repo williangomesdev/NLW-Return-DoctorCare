@@ -93,7 +93,6 @@ section .content p {
   font-size: 1.4rem;
   font-weight: 700;
   display: flex;
-  margin-bottom: 6rem;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
@@ -598,6 +597,10 @@ footer .socialLinks {
 
   #home .button {
     margin: 0;
+  }
+
+  #home img {
+    width: 42rem;
   }
 
   #services h2 {
