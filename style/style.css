@@ -427,6 +427,14 @@ footer .socialLinks {
     display: grid;
   }
 
+  .col-a {
+    grid-area: col-a;
+  }
+
+  .col-b {
+    grid-area: col-b;
+  }
+
   section {
     padding-block: 16rem;
   }
@@ -515,13 +523,11 @@ footer .socialLinks {
   }
 
   #home .col-a {
-    grid-area: col-a;
     text-align: left;
     align-self: center;
   }
 
-  #home img {
-    grid-area: col-b;
+  #home .col-b {
     width: 42rem;
   }
 
@@ -566,5 +572,19 @@ footer .socialLinks {
   #services .card {
     width: 30%;
     flex-grow: 1;
+  }
+
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: "col-b col-a";
+    gap: 6.7rem;
+  }
+
+  #about .col-a{
+    align-self: center;
+  }
+
+  #about .content  p{
+margin-bottom: 0;
   }
 }
