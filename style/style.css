@@ -419,7 +419,7 @@ footer .socialLinks {
 }
 
 @media (min-width: 1024px) {
-  body{
+  body {
     overflow: auto;
   }
   .wrapper {
@@ -427,8 +427,13 @@ footer .socialLinks {
     display: grid;
   }
 
-  section{
+  section {
     padding-block: 16rem;
+  }
+
+  section h2 {
+    font-size: 4.2rem;
+    line-height: 5.2rem;
   }
 
   /*resetar*/
@@ -545,5 +550,21 @@ footer .socialLinks {
 
   #home .button {
     margin: 0;
+  }
+
+  #services h2 {
+    margin-inline: auto;
+    width: 47rem;
+  }
+
+  #services .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #services .card {
+    width: 30%;
+    flex-grow: 1;
   }
 }
